@@ -5,7 +5,7 @@ DEPS = $(SRCS:.c=.d)   #переменная для файлов зависим�
 all: release
 
 release: $(OBJS)           #линковка
-	gcc $(OBJS) -o test_mmio
+	gcc $^ -o test_mmio
 
 %.o: %.c               #создание объектных файлов и файлов зависимостей
 	gcc -MMD -MP -c $< -o $@
