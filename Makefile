@@ -39,12 +39,12 @@ debug: $(DEBUG_OBJS)
 
 # Создание release .o и .d с включённой оптимизацией
 $(RELEASE_DIR)/%.o: %.c
-	mkdir -p $@
+	mkdir -p $(RELEASE_DIR)
 	$(CC) -MMD -MP -O3 -c $< -o $@
 
 # Создание debug .o и .d с включённой отладкой
 $(DEBUG_DIR)/%.o: %.c
-	mkdir -p $@
+	mkdir -p $(DEBUG_DIR)
 	$(CC) -MMD -MP -Og -c $< -o $@
 
 # Очистка корня, release и debug от .o, .d
