@@ -63,7 +63,7 @@ $(DEBUG_DIR)/%.o: %.c
 	$(CC) -MMD -MP -g -c $< -o $@
 
 # Очистка корня, release и debug от .o, .d
-clean:                 			#очистка корня, release и debug от .o, .d 
+clean:
 	rm -f $(OBJS) $(DEPS) test_mmio $(RELEASE_DIR)/* $(DEBUG_DIR)/*
 
 # Включает .d файлы для отслеживания изменения зависимостей
