@@ -66,5 +66,8 @@ $(DEBUG_DIR)/%.o: %.c
 clean:
 	rm -f $(OBJS) $(DEPS) test_mmio $(RELEASE_DIR)/* $(DEBUG_DIR)/*
 
+# Цель аналогична clean
+distclean: clean
+
 # Включает .d файлы для отслеживания изменения зависимостей
 -include $(DEPS) $(RELEASE_DEPS) $(DEBUG_DEPS)
