@@ -58,6 +58,9 @@ $(DEBUG_DIR)/%.o: %.c
 	mkdir -p $(DEBUG_DIR)
 	$(CC) -MMD -MP -g -c $< -o $@
 
+Явное объявление абстракной цели
+.PHONY: clean
+
 # Очистка корня, release и debug от .o, .d
 clean:                 			#очистка корня, release и debug от .o, .d 
 	rm -f $(OBJS) $(DEPS) test_mmio $(RELEASE_DIR)/* $(DEBUG_DIR)/*
