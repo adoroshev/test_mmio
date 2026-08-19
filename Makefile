@@ -33,7 +33,11 @@ PREFIX = /usr/local
 # Путь для установки программы
 BINDIR = $(PREFIX)/bin
 
+#Команда для установки программ
 INSTALL = install
+
+#Явное объявление абстрактной цели
+.PHONY: all release debug install clean distclean dist
 
 all: release
 
@@ -57,9 +61,6 @@ $(RELEASE_DIR)/%.o: %.c
 $(DEBUG_DIR)/%.o: %.c
 	mkdir -p $(DEBUG_DIR)
 	$(CC) -MMD -MP -g -c $< -o $@
-
-Явное объявление абстракной цели
-.PHONY: clean
 
 # Очистка корня, release и debug от .o, .d
 clean:                 			#очистка корня, release и debug от .o, .d 
