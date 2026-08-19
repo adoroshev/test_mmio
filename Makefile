@@ -1,3 +1,5 @@
+CC = gcc
+
 # Все исходники с расширением *.c
 SRCS = $(wildcard *.c)
 
@@ -29,19 +31,21 @@ all: release
 
 # Линковка release
 release: $(RELEASE_OBJS)
-	gcc $^ -o $(RELEASE_DIR)/test_mmio
+	$(CC) $^ -o $(RELEASE_DIR)/test_mmio
 
 # Линковка debug
 debug: $(DEBUG_OBJS)
-	gcc $^ -o $(DEBUG_DIR)/test_mmio
+	$(CC) $^ -o $(DEBUG_DIR)/test_mmio
 
 # Создание release .o и .d с включённой оптимизацией
 $(RELEASE_DIR)/%.o: %.c
-	gcc -MMD -MP -c $< -o $@
+	mkdir -p $@
+	$(CC) -MMD -MP -O3 -c $< -o $@
 
 # Создание debug .o и .d с включённой отладкой
 $(DEBUG_DIR)/%.o: %.c
-	gcc -MMD -MP -Og -c $< -o $@
+	mkdir -p $@
+	$(CC) -MMD -MP -Og -c $< -o $@
 
 # Очистка корня, release и debug от .o, .d
 clean:                 			#очистка корня, release и debug от .o, .d 
