@@ -45,7 +45,7 @@ $(RELEASE_DIR)/%.o: %.c
 # Создание debug .o и .d с включённой отладкой
 $(DEBUG_DIR)/%.o: %.c
 	mkdir -p $(DEBUG_DIR)
-	$(CC) -MMD -MP -Og -c $< -o $@
+	$(CC) -MMD -MP -g -c $< -o $@
 
 # Очистка корня, release и debug от .o, .d
 clean:                 			#очистка корня, release и debug от .o, .d 
