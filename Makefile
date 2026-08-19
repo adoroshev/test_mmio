@@ -27,6 +27,14 @@ DEBUG_OBJS = $(SRCS:%.c=$(DEBUG_DIR)/%.o)
 # Дебажные .d
 DEBUG_DEPS = $(SRCS:%.c=$(DEBUG_DIR)/%.d)
 
+# Префикс для конструирования других переменных
+PREFIX = /usr/local
+
+# Путь для установки программы
+BINDIR = $(PREFIX)/bin
+
+INSTALL = install
+
 all: release
 
 # Линковка release
@@ -36,6 +44,9 @@ release: $(RELEASE_OBJS)
 # Линковка debug
 debug: $(DEBUG_OBJS)
 	$(CC) $^ -o $(DEBUG_DIR)/test_mmio
+
+install: $(RELEASE_DIR)/test_mmio
+	$(INSTALL) -m 755 $< $(BINDIR)
 
 # Создание release .o и .d с включённой оптимизацией
 $(RELEASE_DIR)/%.o: %.c
@@ -50,6 +61,6 @@ $(DEBUG_DIR)/%.o: %.c
 # Очистка корня, release и debug от .o, .d
 clean:                 			#очистка корня, release и debug от .o, .d 
 	rm -f $(OBJS) $(DEPS) test_mmio $(RELEASE_DIR)/* $(DEBUG_DIR)/*
-			
+
 # Включает .d файлы для отслеживания изменения зависимостей
 -include $(DEPS) $(RELEASE_DEPS) $(DEBUG_DEPS)
