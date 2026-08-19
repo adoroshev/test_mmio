@@ -1,28 +1,51 @@
-SRCS = $(wildcard *.c)				#исходники с маской, чтобы брать все файлы с расширением *.c
-OBJS = $(SRCS:.c=.o)				#объектные файлов, где за имя берётся имя исходяника
-DEPS = $(SRCS:.c=.d)				#зависимости, которые будут создаваться во время компиляции .o
-RELEASE_DIR = release				#релизная директория
-RELEASE_OBJS = $(SRCS:%.c=$(RELEASE_DIR)/%.o)	#релизные .o
-RELEASE_DEPS = $(SRCS:%.c=$(RELEASE_DIR)/%.d)	#релизные .d
-DEBUG_DIR = debug				#дебажная директория
-DEBUG_OBJS = $(SRCS:%.c=$(DEBUG_DIR)/%.o)	#дебажные .o
-DEBUG_DEPS = $(SRCS:%.c=$(DEBUG_DIR)/%.d)	#дебажные .d
+# Все исходники с расширением *.c
+SRCS = $(wildcard *.c)
+
+# Объектные файлы, где за имя берётся имя исходника
+OBJS = $(SRCS:.c=.o)
+
+# Списки зависимостей в формате Makefile, которые будут создаваться во время компиляции .o
+DEPS = $(SRCS:.c=.d)
+
+# Директория для release
+RELEASE_DIR = release
+
+# Релизные .o
+RELEASE_OBJS = $(SRCS:%.c=$(RELEASE_DIR)/%.o)
+
+# Релизные .d
+RELEASE_DEPS = $(SRCS:%.c=$(RELEASE_DIR)/%.d)
+
+# Директория для debug
+DEBUG_DIR = debug
+
+# Дебажные .o
+DEBUG_OBJS = $(SRCS:%.c=$(DEBUG_DIR)/%.o)
+
+# Дебажные .d
+DEBUG_DEPS = $(SRCS:%.c=$(DEBUG_DIR)/%.d)
 
 all: release
 
-release: $(RELEASE_OBJS)			#линковка релиза
+# Линковка release
+release: $(RELEASE_OBJS)
 	gcc $^ -o $(RELEASE_DIR)/test_mmio
 
-debug: $(DEBUG_OBJS)				#линковка дебага
+# Линковка debug
+debug: $(DEBUG_OBJS)
 	gcc $^ -o $(DEBUG_DIR)/test_mmio
 
-$(RELEASE_DIR)/%.o: %.c				#создание .o и .d для релиза с включённой оптимизацией
-	gcc -MMD -MP -O3 -c $< -o $@
+# Создание release .o и .d с включённой оптимизацией
+$(RELEASE_DIR)/%.o: %.c
+	gcc -MMD -MP -c $< -o $@
 
-$(DEBUG_DIR)/%.o: %.c				#создание .o и .d для дебага с включённой отладкой
+# Создание debug .o и .d с включённой отладкой
+$(DEBUG_DIR)/%.o: %.c
 	gcc -MMD -MP -Og -c $< -o $@
 
-clean:                 				#очистка корня, release и debug от .o, .d 
+# Очистка корня, release и debug от .o, .d
+clean:                 			#очистка корня, release и debug от .o, .d 
 	rm -f $(OBJS) $(DEPS) test_mmio $(RELEASE_DIR)/* $(DEBUG_DIR)/*
 			
--include $(DEPS) $(RELEASE_DEPS) $(DEBUG_DEPS)	#включает .d файлы для отслеживания изменения зависимостей
+# Включает .d файлы для отслеживания изменения зависимостей
+-include $(DEPS) $(RELEASE_DEPS) $(DEBUG_DEPS)
