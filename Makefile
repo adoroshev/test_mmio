@@ -17,6 +17,9 @@ OBJS = $(SRCS:.c=.o)
 # Списки зависимостей в формате Makefile, которые будут создаваться во время компиляции .o
 DEPS = $(SRCS:.c=.d)
 
+# Заголовочные файлы
+HEADS = $(wildcard *.h)
+
 # Директория для release
 RELEASE_DIR = release
 
@@ -62,7 +65,7 @@ install: release
 	$(INSTALL) -m 755 $(RELEASE_DIR)/$(APP) $(BINDIR)
 
 # Архивируем исходники и Makefile
-dist: $(SRCS) Makefile
+dist: $(SRCS) $(HEADS) Makefile
 	tar -czf $(APP)-$(VER).tar.gz $^
 
 # Создание release .o и .d с включённой оптимизацией
