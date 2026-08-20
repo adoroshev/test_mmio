@@ -5,6 +5,9 @@ CFLAGS = -MMD -MP
 # Название программы
 APP = test_mmio
 
+# Версия программы
+VER = 1.0
+
 # Все исходники с расширением *.c
 SRCS = $(wildcard *.c)
 
@@ -60,7 +63,7 @@ install: release
 
 # Архивируем исходники и Makefile
 dist: $(SRCS) Makefile
-	tar -czf $(APP).tar.gz $^
+	tar -czf $(APP)-$(VER).tar.gz $^
 
 # Создание release .o и .d с включённой оптимизацией
 $(RELEASE_DIR)/%.o: %.c
@@ -74,7 +77,7 @@ $(DEBUG_DIR)/%.o: %.c
 
 # Очистка корня, release и debug от .o, .d
 clean:
-	rm -f $(OBJS) $(DEPS) $(APP) $(RELEASE_DIR)/* $(DEBUG_DIR)/*
+	rm -f $(OBJS) $(DEPS) $(APP)-$(VER).tar.gz $(RELEASE_DIR)/* $(DEBUG_DIR)/*
 
 # Цель аналогична clean
 distclean: clean
