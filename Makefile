@@ -49,7 +49,8 @@ release: $(RELEASE_OBJS)
 debug: $(DEBUG_OBJS)
 	$(CC) $^ -o $(DEBUG_DIR)/test_mmio
 
-install: all
+# Установка release в систему
+install: release
 	$(INSTALL) -m 755 $(RELEASE_DIR)/test_mmio $(BINDIR)
 
 # Создание release .o и .d с включённой оптимизацией
