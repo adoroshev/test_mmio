@@ -1,5 +1,8 @@
 CC = gcc
 
+# Название программы
+APP = test_mmio
+
 # Все исходники с расширением *.c
 SRCS = $(wildcard *.c)
 
@@ -43,15 +46,19 @@ all: release
 
 # Линковка release
 release: $(RELEASE_OBJS)
-	$(CC) $^ -o $(RELEASE_DIR)/test_mmio
+	$(CC) $^ -o $(RELEASE_DIR)/$(APP)
 
 # Линковка debug
 debug: $(DEBUG_OBJS)
-	$(CC) $^ -o $(DEBUG_DIR)/test_mmio
+	$(CC) $^ -o $(DEBUG_DIR)/$(APP)
 
 # Установка release в систему
 install: release
-	$(INSTALL) -m 755 $(RELEASE_DIR)/test_mmio $(BINDIR)
+	$(INSTALL) -m 755 $(RELEASE_DIR)/$(APP) $(BINDIR)
+
+# Архивируем исходники и Makefile
+dist: $(SRCS) Makefile
+	tar -czf $(APP).tar.gz $^
 
 # Создание release .o и .d с включённой оптимизацией
 $(RELEASE_DIR)/%.o: %.c
