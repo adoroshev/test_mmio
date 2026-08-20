@@ -1,5 +1,7 @@
 CC = gcc
 
+CFLAGS = -MMD -MP
+
 # Название программы
 APP = test_mmio
 
@@ -39,7 +41,7 @@ BINDIR = $(PREFIX)/bin
 #Команда для установки программ
 INSTALL = install
 
-#Явное объявление абстрактной цели
+#Явное объявление абстрактных целей
 .PHONY: all release debug install clean distclean dist
 
 all: release
@@ -63,16 +65,16 @@ dist: $(SRCS) Makefile
 # Создание release .o и .d с включённой оптимизацией
 $(RELEASE_DIR)/%.o: %.c
 	mkdir -p $(RELEASE_DIR)
-	$(CC) -MMD -MP -O3 -c $< -o $@
+	$(CC) $(CFLAGS) -O3 -c $< -o $@
 
 # Создание debug .o и .d с включённой отладкой
 $(DEBUG_DIR)/%.o: %.c
 	mkdir -p $(DEBUG_DIR)
-	$(CC) -MMD -MP -g -c $< -o $@
+	$(CC) $(CFLAGS) -g -c $< -o $@
 
 # Очистка корня, release и debug от .o, .d
 clean:
-	rm -f $(OBJS) $(DEPS) test_mmio $(RELEASE_DIR)/* $(DEBUG_DIR)/*
+	rm -f $(OBJS) $(DEPS) $(APP) $(RELEASE_DIR)/* $(DEBUG_DIR)/*
 
 # Цель аналогична clean
 distclean: clean
