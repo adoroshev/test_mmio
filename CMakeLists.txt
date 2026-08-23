@@ -1,5 +1,10 @@
+# Минимальная версия cmake
 cmake_minimum_required(VERSION 3.31.6)
+
+# Название проекта
 project(test_mmio_project)
+
+# Команда для создания цели сборки программы
 add_executable(test_mmio
 	chars_get_char_type.c
 	chars_get_esc_sequence.c
