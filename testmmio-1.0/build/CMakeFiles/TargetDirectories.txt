@@ -1,7 +1,0 @@
-/home/user/project/test_mmio/testmmio-1.0/build/CMakeFiles/test_mmio.dir
-/home/user/project/test_mmio/testmmio-1.0/build/CMakeFiles/edit_cache.dir
-/home/user/project/test_mmio/testmmio-1.0/build/CMakeFiles/rebuild_cache.dir
-/home/user/project/test_mmio/testmmio-1.0/build/CMakeFiles/list_install_components.dir
-/home/user/project/test_mmio/testmmio-1.0/build/CMakeFiles/install.dir
-/home/user/project/test_mmio/testmmio-1.0/build/CMakeFiles/install/local.dir
-/home/user/project/test_mmio/testmmio-1.0/build/CMakeFiles/install/strip.dir

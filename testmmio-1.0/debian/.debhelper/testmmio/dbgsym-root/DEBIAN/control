@@ -1,0 +1,12 @@
+Package: testmmio-dbgsym
+Source: testmmio
+Version: 1.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: user <a.doroshev@securitycode.ru>
+Installed-Size: 47
+Depends: testmmio (= 1.0-1)
+Section: debug
+Priority: optional
+Description: debug symbols for testmmio
+Build-Ids: e1471104dc09741584b7b54b3419c0def63da2e9
