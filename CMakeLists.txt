@@ -60,5 +60,5 @@ add_executable(test_mmio
 
 # Цель для установки результатов сборки в систему
 install (TARGETS test_mmio
-	DESTINATION /usr/local/bin
+	DESTINATION bin
 )
