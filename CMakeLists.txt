@@ -57,3 +57,8 @@ add_executable(test_mmio
 	print_newline.c
 	print_screen_clear.c
 )
+
+# Цель для установки результатов сборки в систему
+install (TARGETS test_mmio
+	DESTINATION /usr/local/bin
+)
