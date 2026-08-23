@@ -1,0 +1,202 @@
+test_mmio: \
+  /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o \
+  /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o \
+  /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o \
+  CMakeFiles/test_mmio.dir/chars_get_char_type.c.o \
+  CMakeFiles/test_mmio.dir/chars_get_esc_sequence.c.o \
+  CMakeFiles/test_mmio.dir/command_free.c.o \
+  CMakeFiles/test_mmio.dir/command_init.c.o \
+  CMakeFiles/test_mmio.dir/command_string_to_command.c.o \
+  CMakeFiles/test_mmio.dir/console_do_action_for_char.c.o \
+  CMakeFiles/test_mmio.dir/console_execute_command.c.o \
+  CMakeFiles/test_mmio.dir/console_free.c.o \
+  CMakeFiles/test_mmio.dir/console_init.c.o \
+  CMakeFiles/test_mmio.dir/console_run.c.o \
+  CMakeFiles/test_mmio.dir/enable_raw_terminal.c.o \
+  CMakeFiles/test_mmio.dir/history_add.c.o \
+  CMakeFiles/test_mmio.dir/history_free.c.o \
+  CMakeFiles/test_mmio.dir/history_init.c.o \
+  CMakeFiles/test_mmio.dir/history_node_free.c.o \
+  CMakeFiles/test_mmio.dir/history_node_init.c.o \
+  CMakeFiles/test_mmio.dir/history_node_set_input.c.o \
+  CMakeFiles/test_mmio.dir/history_print.c.o \
+  CMakeFiles/test_mmio.dir/main.c.o \
+  CMakeFiles/test_mmio.dir/mmio_get_memory_address.c.o \
+  CMakeFiles/test_mmio.dir/mmio_iorb.c.o \
+  CMakeFiles/test_mmio.dir/mmio_iord.c.o \
+  CMakeFiles/test_mmio.dir/mmio_iorw.c.o \
+  CMakeFiles/test_mmio.dir/mmio_iowb.c.o \
+  CMakeFiles/test_mmio.dir/mmio_iowd.c.o \
+  CMakeFiles/test_mmio.dir/mmio_ioww.c.o \
+  CMakeFiles/test_mmio.dir/mmio_mmrb.c.o \
+  CMakeFiles/test_mmio.dir/mmio_mmrd.c.o \
+  CMakeFiles/test_mmio.dir/mmio_mmrw.c.o \
+  CMakeFiles/test_mmio.dir/mmio_mmwb.c.o \
+  CMakeFiles/test_mmio.dir/mmio_mmwd.c.o \
+  CMakeFiles/test_mmio.dir/mmio_mmww.c.o \
+  CMakeFiles/test_mmio.dir/mmio_read_decimal.c.o \
+  CMakeFiles/test_mmio.dir/mmio_read_hexadecimal.c.o \
+  CMakeFiles/test_mmio.dir/mmio_read_octal.c.o \
+  CMakeFiles/test_mmio.dir/print_header.c.o \
+  CMakeFiles/test_mmio.dir/print_help.c.o \
+  CMakeFiles/test_mmio.dir/print_input_prompt.c.o \
+  CMakeFiles/test_mmio.dir/print_line_reset.c.o \
+  CMakeFiles/test_mmio.dir/print_move_cursor_left.c.o \
+  CMakeFiles/test_mmio.dir/print_move_cursor_right.c.o \
+  CMakeFiles/test_mmio.dir/print_newline.c.o \
+  CMakeFiles/test_mmio.dir/print_screen_clear.c.o \
+  /usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a \
+  /usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so \
+  /usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so \
+  /usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so \
+  /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libgcc_s.so.1 \
+  /usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a \
+  /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libc.so \
+  /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libc.so \
+  /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libc.so \
+  /lib/x86_64-linux-gnu/libc.so.6 \
+  /usr/lib/x86_64-linux-gnu/libc_nonshared.a \
+  /lib64/ld-linux-x86-64.so.2 \
+  /usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a \
+  /usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so \
+  /usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so \
+  /usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so \
+  /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libgcc_s.so.1 \
+  /usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a \
+  /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o \
+  /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o \
+  /lib64/ld-linux-x86-64.so.2
+
+/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o:
+
+CMakeFiles/test_mmio.dir/chars_get_char_type.c.o:
+
+CMakeFiles/test_mmio.dir/chars_get_esc_sequence.c.o:
+
+CMakeFiles/test_mmio.dir/command_free.c.o:
+
+CMakeFiles/test_mmio.dir/command_init.c.o:
+
+CMakeFiles/test_mmio.dir/command_string_to_command.c.o:
+
+CMakeFiles/test_mmio.dir/console_do_action_for_char.c.o:
+
+CMakeFiles/test_mmio.dir/console_execute_command.c.o:
+
+CMakeFiles/test_mmio.dir/console_free.c.o:
+
+CMakeFiles/test_mmio.dir/console_init.c.o:
+
+CMakeFiles/test_mmio.dir/console_run.c.o:
+
+CMakeFiles/test_mmio.dir/enable_raw_terminal.c.o:
+
+CMakeFiles/test_mmio.dir/history_add.c.o:
+
+CMakeFiles/test_mmio.dir/history_free.c.o:
+
+CMakeFiles/test_mmio.dir/history_init.c.o:
+
+CMakeFiles/test_mmio.dir/history_node_free.c.o:
+
+CMakeFiles/test_mmio.dir/history_node_init.c.o:
+
+CMakeFiles/test_mmio.dir/history_node_set_input.c.o:
+
+CMakeFiles/test_mmio.dir/history_print.c.o:
+
+CMakeFiles/test_mmio.dir/main.c.o:
+
+CMakeFiles/test_mmio.dir/mmio_get_memory_address.c.o:
+
+CMakeFiles/test_mmio.dir/mmio_iorb.c.o:
+
+CMakeFiles/test_mmio.dir/mmio_iord.c.o:
+
+CMakeFiles/test_mmio.dir/mmio_iorw.c.o:
+
+CMakeFiles/test_mmio.dir/mmio_iowb.c.o:
+
+CMakeFiles/test_mmio.dir/mmio_iowd.c.o:
+
+CMakeFiles/test_mmio.dir/mmio_ioww.c.o:
+
+CMakeFiles/test_mmio.dir/mmio_mmrb.c.o:
+
+CMakeFiles/test_mmio.dir/mmio_mmrd.c.o:
+
+CMakeFiles/test_mmio.dir/mmio_mmrw.c.o:
+
+CMakeFiles/test_mmio.dir/mmio_mmwb.c.o:
+
+CMakeFiles/test_mmio.dir/mmio_mmwd.c.o:
+
+CMakeFiles/test_mmio.dir/mmio_mmww.c.o:
+
+CMakeFiles/test_mmio.dir/mmio_read_decimal.c.o:
+
+CMakeFiles/test_mmio.dir/mmio_read_hexadecimal.c.o:
+
+CMakeFiles/test_mmio.dir/mmio_read_octal.c.o:
+
+CMakeFiles/test_mmio.dir/print_header.c.o:
+
+CMakeFiles/test_mmio.dir/print_help.c.o:
+
+CMakeFiles/test_mmio.dir/print_input_prompt.c.o:
+
+CMakeFiles/test_mmio.dir/print_line_reset.c.o:
+
+CMakeFiles/test_mmio.dir/print_move_cursor_left.c.o:
+
+CMakeFiles/test_mmio.dir/print_move_cursor_right.c.o:
+
+CMakeFiles/test_mmio.dir/print_newline.c.o:
+
+CMakeFiles/test_mmio.dir/print_screen_clear.c.o:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libgcc_s.so.1:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libc.so:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libc.so:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libc.so:
+
+/lib/x86_64-linux-gnu/libc.so.6:
+
+/usr/lib/x86_64-linux-gnu/libc_nonshared.a:
+
+/lib64/ld-linux-x86-64.so.2:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libgcc_s.so.1:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o:
+
+/lib64/ld-linux-x86-64.so.2:
