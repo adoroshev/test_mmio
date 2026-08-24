@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Sun, 23 Aug 2026 21:51:19 +0300
+Source: testmmio
+Binary: testmmio testmmio-dbgsym
+Architecture: source amd64
+Version: 1.0-1
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: user <a.doroshev@securitycode.ru>
+Changed-By: user <a.doroshev@securitycode.ru>
+Description:
+ testmmio   - <insert up to 60 chars description>
+Changes:
+ testmmio (1.0-1) UNRELEASED; urgency=medium
+ .
+   * Initial release. (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Checksums-Sha1:
+ 981146ec0b7b06608bf67700faa003a1f53e3a0d 827 testmmio_1.0-1.dsc
+ 5df3230d65907e88c89beccf7497f33c19ad953d 16104 testmmio_1.0.orig.tar.xz
+ 59f803c06a919f12899d2dbd4fa4e12f50f88df7 9888 testmmio_1.0-1.debian.tar.xz
+ bb800333090f362c4b919c0341c50dafba99f141 22980 testmmio-dbgsym_1.0-1_amd64.deb
+ affa6aee12e05149ea3118edc636bfb183865450 6155 testmmio_1.0-1_amd64.buildinfo
+ 2d5aefb8b3f6f3d532b9860352e91395ae140403 9120 testmmio_1.0-1_amd64.deb
+Checksums-Sha256:
+ b70c4fbfe2c610b296ff7fc7fb47747ed9312c37b2ba889032d8c374b5385f9d 827 testmmio_1.0-1.dsc
+ 4f4b22dc3422d2cb9e08b098c714fdb2099772094d4ae3d0d4155ea85cf33dcb 16104 testmmio_1.0.orig.tar.xz
+ 132b7a7acf1a33bb21a5d951388edc5c1906b4e80cdb1fa77a6a51a9c46cf2b3 9888 testmmio_1.0-1.debian.tar.xz
+ 557524ef205b4685f9273b487f31984aa3163d397bbc6b6521308d14226908bc 22980 testmmio-dbgsym_1.0-1_amd64.deb
+ 6ec6f070ffaa2821fe81b48e7569ac59b7691a6013602488e86f4032245718c5 6155 testmmio_1.0-1_amd64.buildinfo
+ 785329f9583abf245ca56bfa7d55cc3abc3a3dc56adc4a15f9fdaee6eced2656 9120 testmmio_1.0-1_amd64.deb
+Files:
+ d63fc3fdc434ff7d735ad86a959722b7 827 unknown optional testmmio_1.0-1.dsc
+ 30ff303f715c073692ba9edb9cf7030b 16104 unknown optional testmmio_1.0.orig.tar.xz
+ 896cda812d0a1de0a5022e711e104646 9888 unknown optional testmmio_1.0-1.debian.tar.xz
+ 2b081adf91c306e103970c5841421c5f 22980 debug optional testmmio-dbgsym_1.0-1_amd64.deb
+ c3de90df06e6a257c20c7be9ad426d51 6155 unknown optional testmmio_1.0-1_amd64.buildinfo
+ fef7ba197d9278e7e83cb838872df003 9120 unknown optional testmmio_1.0-1_amd64.deb
