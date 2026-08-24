@@ -12,7 +12,7 @@ cmake -B $debug_dir -DCMAKE_BUILD_TYPE=Debug
 cmake --build $debug_dir
 
 # Сборка release
-cmake -B $release_dir -DCMAKE_BUILD_TYPE=Debug
+cmake -B $release_dir -DCMAKE_BUILD_TYPE=Release
 cmake --build $release_dir
 
 # Установка release в систему
