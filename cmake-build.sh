@@ -1,7 +1,7 @@
 #!/bin/bash
 
 release_dir=cmake-build/release
-debug_dir=cmake-buid/debug
+debug_dir=cmake-build/debug
 
 # Каталоги для хранения release и debug
 mkdir -p $release_dir
