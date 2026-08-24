@@ -1,0 +1,64 @@
+# Минимальная версия cmake
+cmake_minimum_required(VERSION 3.31.6)
+
+# Название проекта
+project(test_mmio_project)
+
+# Команда для создания цели сборки программы
+add_executable(test_mmio
+	chars_get_char_type.c
+	chars_get_esc_sequence.c
+	chars.h
+	command_free.c
+	command.h
+	command_init.c
+	command_string_to_command.c
+	console_do_action_for_char.c
+	console_execute_command.c
+	console_free.c
+	console.h
+	console_init.c
+	console_run.c
+	enable_raw_terminal.c
+	history_add.c
+	history_free.c
+	history.h
+	history_init.c
+	history_node_free.c
+	history_node_init.c
+	history_node_set_input.c
+	history_print.c
+	main.c
+	misc.h
+	mmio_get_memory_address.c
+	mmio.h
+	mmio_iorb.c
+	mmio_iord.c
+	mmio_iorw.c
+	mmio_iowb.c
+	mmio_iowd.c
+	mmio_ioww.c
+	mmio_mmrb.c
+	mmio_mmrd.c
+	mmio_mmrw.c
+	mmio_mmwb.c
+	mmio_mmwd.c
+	mmio_mmww.c
+	mmio_read_decimal.c
+	mmio_read_hexadecimal.c
+	mmio_read_octal.c
+	print.h
+	print_header.c
+	print_help.c
+	print_input_prompt.c
+	print_line_reset.c
+	print_move_cursor_left.c
+	print_move_cursor_right.c
+	print_newline.c
+	print_screen_clear.c
+)
+
+# Цель для установки результатов сборки в систему
+install (TARGETS test_mmio
+	DESTINATION bin
+)
