@@ -21,7 +21,7 @@ DEPS = $(SRCS:.c=.d)
 HEADS = $(wildcard *.h)
 
 # Директория для release
-RELEASE_DIR = release
+RELEASE_DIR = Makefile/release
 
 # Релизные .o
 RELEASE_OBJS = $(SRCS:%.c=$(RELEASE_DIR)/%.o)
@@ -30,7 +30,7 @@ RELEASE_OBJS = $(SRCS:%.c=$(RELEASE_DIR)/%.o)
 RELEASE_DEPS = $(SRCS:%.c=$(RELEASE_DIR)/%.d)
 
 # Директория для debug
-DEBUG_DIR = debug
+DEBUG_DIR = Makefile/debug
 
 # Дебажные .o
 DEBUG_OBJS = $(SRCS:%.c=$(DEBUG_DIR)/%.o)
